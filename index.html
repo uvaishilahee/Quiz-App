@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    
+
+    <div class="start-box">Start Quiz </div>
+    <div class="rules">
+      <h2>Some rules of the Quiz</h2>
+      <ol>
+        <li>Once you click on Start Quiz button, the timer starts.</li>
+        <li>You can only start the Quiz only after you have entered your name.</li>
+      <li>Once you select your answer, it can't be undone.</li>
+      <li>You can't go to the previous questions once you have answered it.</li>
+      <li>The quiz can only end if the timer is complete or you have answered all questions.</li>
+      <li> You'll get points on the basis of your correct answers.</li>
+    </ol>
+
+    <div class="enter-name">
+      <form>
+        <input type="text" name="" placeholder="Enter Your Name" required id="name-input">
+      </form>
+    </div>
+    <button class="start-quiz" type="submit">Start Quiz</button>
+  </div>
+    <div class="quiz-container" id="quiz">
+      <div class="timer">
+      <span class="minutes">50</span>:<span class="seconds">00</span>
+    </div>
+      <div class="quiz-header">
+        <h2 id="question">Question Text</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Question</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Question</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">Question</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="d_text">Question</label>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="next">Next</div>
+      <div class="prev">Prev</div> -->
+      <button id="submit">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
